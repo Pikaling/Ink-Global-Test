@@ -1,0 +1,11 @@
+<p>Select a city to view detailed weather information.</p>
+<table class="table table-condensed">
+	<tr>
+		<th scope="col">City Name</th>
+		<th ng-click="sortCities('main.temp')" scope="col" id="temperature">Temperature</th>
+	</tr>
+	<tr ng-repeat="city in cities|orderBy:sort.column:sort.descending">
+		<td><a ng-href="city/{{city.id}}">{{city.name}}</a></td>
+		<td>{{city.main.temp}}</td>
+	</tr>
+</table>

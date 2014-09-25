@@ -1,0 +1,7 @@
+/* line 1, ../sass/main.scss */
+td, th {
+  vertical-align: middle !important; }
+
+/* line 5, ../sass/main.scss */
+th#temperature {
+  cursor: pointer; }

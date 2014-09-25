@@ -1,0 +1,24 @@
+<h2>{{currentCity.name}}</h2>
+<p><a ng-href="index.html">View all cities</a></p>
+<table class="table table-condensed">
+	<tr>
+		<th scope="row">Location</th>
+		<td>{{currentCity.coord.lat}}, {{currentCity.coord.lon}}</td>
+	</tr>
+	<tr>
+		<th scope="row">Current Weather</th>
+		<td>{{currentCity.weather[0].description}} <img ng-src="{{imageUrl}}" /></td>
+	</tr>
+	<tr>
+		<th scope="row">Temperature</th>
+		<td>{{currentCity.main.temp}}&deg;C (min: {{currentCity.main.temp_min}}&deg;C, max: {{currentCity.main.temp_max}}&deg;C)</td>
+	</tr>
+	<tr>
+		<th scope="row">Atmospheric Pressure</th>
+		<td>{{currentCity.main.pressure}} hPa</td>
+	</tr>
+	<tr>
+		<th scope="row">Humidity</th>
+		<td>{{currentCity.main.humidity}}%</td>
+	</tr>
+</table>
